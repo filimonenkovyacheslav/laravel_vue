@@ -1,0 +1,83 @@
+
+// Fonts
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,500&subset=latin");
+
+// Variables
+@import "variables";
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+.navbar-laravel {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+
+// News content
+.property-listing.news-content .row, #description{
+    margin: 0;
+}
+.news-content #ads-footer{
+    display: none;
+}
+.news-content .property-item .item-body{
+    padding: 0 15px;
+}
+.news-content .property-description.detail-block{
+    margin: 0;
+    padding: 0;
+    padding-top: 15px;
+}
+.news-content .detail-bar .detail-content-tabber{
+    margin-bottom: 20px;        
+}
+.news-content #gallery{
+    margin-top: 40px;
+}
+.news-author a{
+  color: #007bff;
+}
+a.read-more{
+  cursor: pointer;
+}
+.news-post-content .detail-top.detail-top-slideshow .detail-slider .item, .news-post-content .detail-slider.owl-carousel.owl-theme.owl-loaded.owl-drag{
+    min-height: 421px !important;
+}
+
+.add-simple-keyword-form.opened {
+    display: block;
+}
+.add-simple-keyword-form {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 1000;
+    background: #fff;
+    padding: 30px;
+    border: 1px solid lightgray;
+}
+.property-item.art-item.table-list.news-list{
+    background: transparent;
+}
+.news-list div.container-contentbar{
+    background: #fff;
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+    .news-post-content .detail-top.detail-top-slideshow .detail-slider .item, .news-post-content .detail-slider.owl-carousel.owl-theme.owl-loaded.owl-drag{
+        min-height: 270px !important;
+    }
+}
+@media (max-width: 767px){
+    .news-post-content .detail-top.detail-top-slideshow .detail-slider .item, .news-post-content .detail-slider.owl-carousel.owl-theme.owl-loaded.owl-drag{
+        min-height: 270px !important;
+    }
+}
+@media (max-width: 400px){
+    .news-post-content .detail-top.detail-top-slideshow .detail-slider .item, .news-post-content .detail-slider.owl-carousel.owl-theme.owl-loaded.owl-drag{
+        min-height: 240px !important;
+    }
+}
